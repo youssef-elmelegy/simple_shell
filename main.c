@@ -70,7 +70,7 @@ char *path_finder(char *command)
 	}
 	path_c = str_duplicate(path);
 	command_length = str_length(command);
-	path_token = strtok(path_c, ":");
+	path_token = _strtok(path_c, ":");
 
 	while (path_token)
 	{
@@ -91,7 +91,7 @@ char *path_finder(char *command)
 			return (file_path);
 		}
 		free(file_path);
-		path_token = strtok(NULL, ":");
+		path_token = _strtok(NULL, ":");
 	}
 	free(path_c);
 	if (stat(command, &buffer) == 0)
@@ -142,11 +142,11 @@ char **token(char **argv, char *getin, size_t size)
 	(void)size;
 	getin = clear_spaces(getin);
 	c_getin = str_duplicate(getin);
-	token = strtok(getin, delim);
+	token = _strtok(getin, delim);
 	while (token != NULL)
 	{
 		n_tokens++;
-		token = strtok(NULL, delim);
+		token = _strtok(NULL, delim);
 	}
 	argv = malloc(sizeof(char *) * (n_tokens + 1));
 	if (argv == NULL)
@@ -154,11 +154,11 @@ char **token(char **argv, char *getin, size_t size)
 		free(c_getin);
 		return (NULL);
 	}
-	token = strtok(c_getin, delim);
+	token = _strtok(c_getin, delim);
 	for (i = 0; token != NULL; i++)
 	{
 		argv[i] = str_duplicate(token);
-		token = strtok(NULL, delim);
+		token = _strtok(NULL, delim);
 	}
 	argv[i] = NULL;
 	if (_strcmp(argv[0], "exit") == 0)
