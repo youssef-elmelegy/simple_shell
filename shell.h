@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <ctype.h>
 
 extern char **environ;
 /*****exec.c*****/
@@ -33,6 +34,7 @@ int _strcmp(const char *str1, const char *str2);
 /*****prints_help.c****/
 int _print(char *string);
 void print_env(char *env[]);
+char *clear_spaces(char *str);
 
 /*****main.c*****/
 char **token(char **argv, char *getin, size_t size);

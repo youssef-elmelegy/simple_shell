@@ -30,3 +30,36 @@ void print_env(char *env[])
 		_print("\n");
 	}
 }
+
+/**
+ * clear_spaces - Removes consecutive spaces outside double quotes and null.
+ * @str: string.
+ *
+ * Return: Modified string with consecutive spaces outside quotes removed.
+*/
+
+char *clear_spaces(char *str)
+{
+	int i, j;
+	int q = 0;
+
+	for (i = 0, j = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == '\"')
+		{
+			q = !q;
+		}
+		else if (!isspace(str[i]) || q)
+		{
+			str[j++] = str[i];
+			if (!isspace(str[i]) && !q && (isspace(str[i + 1]) || str[i + 1] == '\0'))
+			{
+				str[j++] = ' ';
+			}
+		}
+	}
+
+	str[j] = '\0';
+	return (str);
+}
+

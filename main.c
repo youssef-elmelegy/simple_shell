@@ -140,7 +140,7 @@ char **token(char **argv, char *getin, size_t size)
 	int n_tokens = 0, i = 0;
 
 	(void)size;
-
+	getin = clear_spaces(getin);
 	c_getin = str_duplicate(getin);
 	token = strtok(getin, delim);
 	while (token != NULL)
