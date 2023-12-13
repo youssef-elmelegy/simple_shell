@@ -63,3 +63,53 @@ char *clear_spaces(char *str)
 	return (str);
 }
 
+/**
+ * _strtok - Removes consecutive spaces outside double quotes and null.
+ * @str: sting.
+ * @delim: const sting.
+ *
+ * Return: string.
+*/
+
+char *_strtok(char *str, const char *delim)
+{
+	static char *comming;
+	char *current = NULL;
+
+	if (str != NULL)
+	{
+		comming = str;
+	} else if (comming == NULL)
+	{
+		return (NULL);
+	}
+
+	while (*comming != '\0' && strchr(delim, *comming) != NULL)
+	{
+		comming++;
+	}
+
+	if (*comming == '\0')
+	{
+		comming = NULL;
+		return (NULL);
+	}
+
+	current = comming;
+
+	while (*comming != '\0' && strchr(delim, *comming) == NULL)
+	{
+		comming++;
+	}
+
+	if (*comming != '\0')
+	{
+		*comming = '\0';
+		comming++;
+	} else
+	{
+		comming = NULL;
+	}
+
+	return (current);
+}
