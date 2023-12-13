@@ -5,7 +5,8 @@
  * @string: pointer to the array of chars.
  *
  * Return: the number of bytes writed or.
- */
+*/
+
 int _print(char *string)
 {
 	return (write(STDOUT_FILENO, string, str_length(string)));
@@ -17,7 +18,8 @@ int _print(char *string)
  * @env: array.
  *
  * Return: void.
- */
+*/
+
 void print_env(char *env[])
 {
 	int i = 0;

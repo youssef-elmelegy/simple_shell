@@ -5,7 +5,8 @@
  * @string: pointer of the string.
  *
  * Return: string length.
- */
+*/
+
 int str_length(char *string)
 {
 	int length = 0;
@@ -24,7 +25,7 @@ int str_length(char *string)
  * @string: String that will copied.
  *
  * Return: pointer to duplicated string.
- */
+*/
 
 char *str_duplicate(char *string)
 {
@@ -58,7 +59,8 @@ char *str_duplicate(char *string)
  * @c: The character to locate.
  *
  * Return: A pointer to the first occurrence of the character c in str.
- */
+*/
+
 char *_strchr(const char *str, int c)
 {
 	while (*str != '\0')
@@ -79,7 +81,7 @@ char *_strchr(const char *str, int c)
  * @n: The maximum number of characters to compare.
  *
  * Return: 0 if str1 is equal to str2.
- */
+*/
 
 int _strncmp(const char *str1, const char *str2, size_t n)
 {

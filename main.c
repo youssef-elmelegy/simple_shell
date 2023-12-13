@@ -6,7 +6,7 @@
  * @argv: double pointer.
  *
  * Return: 0 if success.
- */
+*/
 
 int main(int ac, char **argv)
 {
@@ -51,11 +51,12 @@ int main(int ac, char **argv)
 }
 
 /**
- * path_ finder - geting the path of the command.
+ * path_finder - geting the path of the command.
  * @command: command.
  *
  * Return: pointer to char.
- */
+*/
+
 char *path_finder(char *command)
 {
 	char *path_c = NULL, *path_token = NULL, *file_path = NULL;
@@ -99,11 +100,13 @@ char *path_finder(char *command)
 	}
 	return (NULL);
 }
+
 /**
- * cleanup_and_exit - exit builtin function
- * @argv: argv
- * @c_getin: c_getin
- * Return: NULL
+ * cleanup_and_exit - exit builtin function.
+ * @argv: argv.
+ * @c_getin: c_getin.
+ *
+ * Return: NULL.
 */
 
 char **cleanup_and_exit(char **argv, char *c_getin)
@@ -123,12 +126,13 @@ char **cleanup_and_exit(char **argv, char *c_getin)
 
 
 /**
- * token - token the string
- * @argv: argv
- * @getin: string
- * @size: size of string
- * Return: argv pointer
- */
+ * token - token the string.
+ * @argv: argv.
+ * @getin: string.
+ * @size: size of string.
+ *
+ * Return: argv pointer.
+*/
 
 char **token(char **argv, char *getin, size_t size)
 {

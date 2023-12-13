@@ -6,7 +6,8 @@
  * @source: Pointer to the source string.
  *
  * Return: A pointer to the destination buffer.
- */
+*/
+
 char *_strcpy(char *destination, const char *source)
 {
 	char *oDestination = destination;
@@ -24,7 +25,8 @@ char *_strcpy(char *destination, const char *source)
  * @source: Pointer to the source string.
  *
  * Return: A pointer to the destination buffer.
- */
+*/
+
 char *_strcat(char *destination, char *source)
 {
 	char *original_destination = destination;
@@ -53,7 +55,8 @@ char *_strcat(char *destination, char *source)
  * @str2: Second string.
  *
  * Return: 0 if strings are equal.
- */
+*/
+
 int _strcmp(const char *str1, const char *str2)
 {
 	while (*str1 != '\0' && *str2 != '\0')
