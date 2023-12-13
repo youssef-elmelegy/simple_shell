@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * _print - writes a array of chars in the standar output
- * @string: pointer to the array of chars
- * Return: the number of bytes writed or .
- * On error, -1 is returned, and errno is set appropriately
+ * _print - writes a array of chars in the standar output.
+ * @string: pointer to the array of chars.
+ *
+ * Return: the number of bytes writed or.
  */
 int _print(char *string)
 {
@@ -13,10 +13,11 @@ int _print(char *string)
 
 
 /**
- * print_env - print env
- * @env: array
- * Return: void
-*/
+ * print_env - print env.
+ * @env: array.
+ *
+ * Return: void.
+ */
 void print_env(char *env[])
 {
 	int i = 0;

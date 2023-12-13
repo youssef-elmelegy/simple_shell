@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * exec - function that execute the command
- * @argv: array of the command
+ * exec - function that execute the command.
+ * @argv: array of the command.
  *
  * Return: void
-*/
+ */
 
 void *exec(char **argv)
 {

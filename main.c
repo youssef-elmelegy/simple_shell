@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * main - A simple shell heart
- * @ac: integar
+ * main - A simple shell heart.
+ * @ac: integar.
  * @argv: double pointer.
  *
- * Return: 0 if success
-*/
+ * Return: 0 if success.
+ */
 
 int main(int ac, char **argv)
 {
@@ -51,10 +51,11 @@ int main(int ac, char **argv)
 }
 
 /**
- * path_ finder - geting the path of the command
- * @command: command
- * Return: pointer to char
-*/
+ * path_ finder - geting the path of the command.
+ * @command: command.
+ *
+ * Return: pointer to char.
+ */
 char *path_finder(char *command)
 {
 	char *path_c = NULL, *path_token = NULL, *file_path = NULL;

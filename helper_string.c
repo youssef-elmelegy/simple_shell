@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * str_length - give you the length of string..
+ * str_length - give you the length of string.
  * @string: pointer of the string.
+ *
  * Return: string length.
  */
 int str_length(char *string)
@@ -19,8 +20,9 @@ int str_length(char *string)
 }
 
 /**
- * str_duplicate - duplicates the given string
- * @string: String that will copied
+ * str_duplicate - duplicates the given string.
+ * @string: String that will copied.
+ *
  * Return: pointer to duplicated string.
  */
 
@@ -55,9 +57,8 @@ char *str_duplicate(char *string)
  * @str: The string to search within.
  * @c: The character to locate.
  *
- * Return: A pointer to the first occurrence of the character c in str,
- *         or NULL if the character is not found.
-*/
+ * Return: A pointer to the first occurrence of the character c in str.
+ */
 char *_strchr(const char *str, int c)
 {
 	while (*str != '\0')

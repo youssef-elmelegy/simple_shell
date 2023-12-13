@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - Copy a string from source to destination.
- * @destination: Pointer to the destination buffer
+ * @destination: Pointer to the destination buffer.
  * @source: Pointer to the source string.
  *
  * Return: A pointer to the destination buffer.
@@ -52,8 +52,7 @@ char *_strcat(char *destination, char *source)
  * @str1: First string.
  * @str2: Second string.
  *
- * Return: 0 if strings are equal,
- * positive if str1 is greater, negative if str2 is greater.
+ * Return: 0 if strings are equal.
  */
 int _strcmp(const char *str1, const char *str2)
 {
